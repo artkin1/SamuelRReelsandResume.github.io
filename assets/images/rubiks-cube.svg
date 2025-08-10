@@ -1,0 +1,29 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D Rubik's Cube -->
+  <g>
+    <!-- Top face -->
+    <polygon points="10,20 30,10 50,20 30,30" fill="#FFFF00" stroke="#000" stroke-width="1"/>
+    <!-- Grid lines for top face -->
+    <line x1="16.67,23.33" x2="36.67,13.33" stroke="#000" stroke-width="0.5"/>
+    <line x1="23.33,26.67" x2="43.33,16.67" stroke="#000" stroke-width="0.5"/>
+    <line x1="20,15" x2="20,25" stroke="#000" stroke-width="0.5"/>
+    <line x1="30,10" x2="30,30" stroke="#000" stroke-width="0.5"/>
+    <line x1="40,15" x2="40,25" stroke="#000" stroke-width="0.5"/>
+    
+    <!-- Left face -->
+    <polygon points="10,20 30,30 30,50 10,40" fill="#FF6B00" stroke="#000" stroke-width="1"/>
+    <!-- Grid lines for left face -->
+    <line x1="16.67,26.67" x2="16.67,43.33" stroke="#000" stroke-width="0.5"/>
+    <line x1="23.33,33.33" x2="23.33,46.67" stroke="#000" stroke-width="0.5"/>
+    <line x1="10,30" x2="30,40" stroke="#000" stroke-width="0.5"/>
+    <line x1="20,25" x2="20,45" stroke="#000" stroke-width="0.5"/>
+    
+    <!-- Right face -->
+    <polygon points="30,30 50,20 50,40 30,50" fill="#DC143C" stroke="#000" stroke-width="1"/>
+    <!-- Grid lines for right face -->
+    <line x1="36.67,26.67" x2="36.67,43.33" stroke="#000" stroke-width="0.5"/>
+    <line x1="43.33,23.33" x2="43.33,36.67" stroke="#000" stroke-width="0.5"/>
+    <line x1="40,25" x2="40,45" stroke="#000" stroke-width="0.5"/>
+    <line x1="30,40" x2="50,30" stroke="#000" stroke-width="0.5"/>
+  </g>
+</svg>

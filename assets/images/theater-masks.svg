@@ -1,0 +1,73 @@
+<svg width="80" height="50" viewBox="0 0 80 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for depth -->
+    <radialGradient id="happyGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F0F0F0"/>
+      <stop offset="100%" stop-color="#D0D0D0"/>
+    </radialGradient>
+    <radialGradient id="sadGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#F0F0F0"/>
+      <stop offset="100%" stop-color="#D0D0D0"/>
+    </radialGradient>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Comedy Mask (Happy) -->
+  <g transform="translate(5,5)" filter="url(#shadow)">
+    <!-- Face outline -->
+    <ellipse cx="15" cy="17" rx="12" ry="15" fill="url(#happyGradient)" stroke="#333" stroke-width="1.5"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="11" cy="12" rx="2.5" ry="3" fill="#333"/>
+    <ellipse cx="19" cy="12" rx="2.5" ry="3" fill="#333"/>
+    <ellipse cx="11.5" cy="11" rx="0.8" ry="1" fill="#FFF"/>
+    <ellipse cx="19.5" cy="11" rx="0.8" ry="1" fill="#FFF"/>
+    
+    <!-- Eyebrows (raised for happy expression) -->
+    <path d="M 8 9 Q 11 7 14 9" stroke="#333" stroke-width="1.5" fill="none"/>
+    <path d="M 16 9 Q 19 7 22 9" stroke="#333" stroke-width="1.5" fill="none"/>
+    
+    <!-- Nose -->
+    <ellipse cx="15" cy="16" rx="1" ry="1.5" fill="#DDD" stroke="#BBB" stroke-width="0.5"/>
+    
+    <!-- Mouth (happy smile) -->
+    <path d="M 9 20 Q 15 26 21 20" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Cheek highlights -->
+    <ellipse cx="8" cy="18" rx="1.5" ry="2" fill="#FFE6E6" opacity="0.6"/>
+    <ellipse cx="22" cy="18" rx="1.5" ry="2" fill="#FFE6E6" opacity="0.6"/>
+  </g>
+  
+  <!-- Tragedy Mask (Sad) -->
+  <g transform="translate(45,8)" filter="url(#shadow)">
+    <!-- Face outline -->
+    <ellipse cx="15" cy="17" rx="12" ry="15" fill="url(#sadGradient)" stroke="#333" stroke-width="1.5"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="11" cy="14" rx="2.5" ry="3" fill="#333"/>
+    <ellipse cx="19" cy="14" rx="2.5" ry="3" fill="#333"/>
+    <ellipse cx="11.5" cy="13" rx="0.8" ry="1" fill="#FFF"/>
+    <ellipse cx="19.5" cy="13" rx="0.8" ry="1" fill="#FFF"/>
+    
+    <!-- Eyebrows (angled down for sad expression) -->
+    <path d="M 8 11 Q 11 9 14 11" stroke="#333" stroke-width="1.5" fill="none"/>
+    <path d="M 16 11 Q 19 9 22 11" stroke="#333" stroke-width="1.5" fill="none"/>
+    
+    <!-- Nose -->
+    <ellipse cx="15" cy="18" rx="1" ry="1.5" fill="#DDD" stroke="#BBB" stroke-width="0.5"/>
+    
+    <!-- Mouth (sad frown) -->
+    <path d="M 9 24 Q 15 18 21 24" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Tear -->
+    <ellipse cx="8.5" cy="16" rx="0.8" ry="2" fill="#87CEEB" opacity="0.8"/>
+  </g>
+  
+  <!-- Decorative ribbon connecting the masks -->
+  <path d="M 25 25 Q 40 15 55 25" stroke="#D4AF37" stroke-width="2" fill="none" opacity="0.7"/>
+</svg>
