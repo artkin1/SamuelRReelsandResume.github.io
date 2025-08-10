@@ -122,15 +122,11 @@ body {
 }
 
 .tagline {
-    font-family: 'Crimson Text', serif;
+    font-family: Arial, sans-serif;
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: normal;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--dark-green) 0%, var(--green) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--green);
 }
 
 .theater-masks {
